@@ -57,4 +57,7 @@ export class LoginPage implements OnInit {
       this.authService.notifikasi('Username atau Password Tidak Boleh Kosong');
     }
   }
+  goToRegister() {
+    this.router.navigateByUrl('/register');
+  }
 }
