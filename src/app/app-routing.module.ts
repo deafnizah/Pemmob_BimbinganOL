@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule),
+  },  {
+    path: 'homemhs',
+    loadChildren: () => import('./homemhs/homemhs.module').then( m => m.HomemhsPageModule)
   },
+
 ];
 
 @NgModule({

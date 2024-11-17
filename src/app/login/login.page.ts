@@ -36,7 +36,7 @@ export class LoginPage implements OnInit {
 
             // Mengarahkan pengguna berdasarkan role
             if (res.role === 'student') {
-              this.router.navigateByUrl('/home');
+              this.router.navigateByUrl('/homemhs');
             } else if (res.role === 'lecturer') {
               this.router.navigateByUrl('/home');
             } else {

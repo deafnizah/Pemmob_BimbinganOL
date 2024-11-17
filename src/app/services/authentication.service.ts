@@ -102,4 +102,9 @@ export class AuthenticationService {
   isLoggedIn(): boolean {
     return this.isAuthenticated.value;
   }
+  // Fungsi untuk mengambil daftar dosen (lecturer)
+  getLecturers(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiURL()}/getdosen.php`);
+  }
+
 }
